@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 127402962}
   - component: {fileID: 127402961}
   - component: {fileID: 127402960}
+  - component: {fileID: 127402963}
   m_Layer: 5
   m_Name: Coal
   m_TagString: Untagged
@@ -155,12 +156,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 188654366}
-  m_Father: {fileID: 1817673302}
-  m_RootOrder: 1
+  m_Father: {fileID: 1981072712}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 876, y: 44}
+  m_AnchoredPosition: {x: 156, y: -80.05048}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &127402960
@@ -206,7 +207,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 127402961}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 127402963}
+        m_TargetAssemblyTypeName: FeatureButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &127402961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +258,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127402958}
   m_CullTransparentMesh: 1
+--- !u!114 &127402963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127402958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af5cf733852b014dbfc477c726dc063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 
+  feature: Burn
 --- !u!1 &128482452
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,6 +284,7 @@ GameObject:
   - component: {fileID: 128482456}
   - component: {fileID: 128482455}
   - component: {fileID: 128482454}
+  - component: {fileID: 128482457}
   m_Layer: 5
   m_Name: Kangaroo
   m_TagString: Untagged
@@ -328,7 +356,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 128482455}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 128482457}
+        m_TargetAssemblyTypeName: FeatureButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &128482455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,6 +407,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128482452}
   m_CullTransparentMesh: 1
+--- !u!114 &128482457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128482452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af5cf733852b014dbfc477c726dc063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 2 paws
+  feature: jump
 --- !u!1 &188654365
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +568,7 @@ GameObject:
   - component: {fileID: 218667281}
   - component: {fileID: 218667280}
   - component: {fileID: 218667279}
+  - component: {fileID: 218667282}
   m_Layer: 5
   m_Name: Penguin
   m_TagString: Untagged
@@ -585,7 +640,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 218667280}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 218667282}
+        m_TargetAssemblyTypeName: FeatureButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &218667280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,6 +691,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218667277}
   m_CullTransparentMesh: 1
+--- !u!114 &218667282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218667277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af5cf733852b014dbfc477c726dc063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 2 paws
+  feature: swim
 --- !u!1 &226612576
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 125, y: -25}
+  m_AnchoredPosition: {x: 150, y: -25}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &226612578
@@ -682,7 +763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -771,6 +852,7 @@ GameObject:
   - component: {fileID: 293221173}
   - component: {fileID: 293221172}
   - component: {fileID: 293221171}
+  - component: {fileID: 293221174}
   m_Layer: 5
   m_Name: Reptiles
   m_TagString: Untagged
@@ -844,7 +926,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 293221172}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293221174}
+        m_TargetAssemblyTypeName: PawsButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &293221172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,6 +977,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293221169}
   m_CullTransparentMesh: 1
+--- !u!114 &293221174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293221169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d00f05efafe899449091daffd7fc870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 0 paws
 --- !u!1 &303375036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +1137,7 @@ GameObject:
   - component: {fileID: 311365974}
   - component: {fileID: 311365973}
   - component: {fileID: 311365972}
+  - component: {fileID: 311365975}
   m_Layer: 5
   m_Name: Gold
   m_TagString: Untagged
@@ -1050,12 +1158,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1113705125}
-  m_Father: {fileID: 1817673302}
-  m_RootOrder: 0
+  m_Father: {fileID: 1981072712}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 573, y: 44}
+  m_AnchoredPosition: {x: -147, y: -80.05048}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &311365972
@@ -1101,7 +1209,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 311365973}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 311365975}
+        m_TargetAssemblyTypeName: FeatureButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &311365973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,6 +1260,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311365970}
   m_CullTransparentMesh: 1
+--- !u!114 &311365975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311365970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af5cf733852b014dbfc477c726dc063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 
+  feature: Shine
 --- !u!1 &462586826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1682,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647432839}
   m_CullTransparentMesh: 1
+--- !u!1 &674981924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674981926}
+  - component: {fileID: 674981925}
+  m_Layer: 0
+  m_Name: MainManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &674981925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674981924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c505d48fc4be87840b982356eeb1f967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &674981926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674981924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1812,7 +1990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 125, y: -125}
+  m_AnchoredPosition: {x: 150, y: -125}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &722900580
@@ -1835,7 +2013,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1924,6 +2102,7 @@ GameObject:
   - component: {fileID: 761923499}
   - component: {fileID: 761923498}
   - component: {fileID: 761923497}
+  - component: {fileID: 761923500}
   m_Layer: 5
   m_Name: Animals
   m_TagString: Untagged
@@ -1995,7 +2174,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 761923498}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 761923500}
+        m_TargetAssemblyTypeName: ClassButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &761923498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,6 +2225,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761923495}
   m_CullTransparentMesh: 1
+--- !u!114 &761923500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761923495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79169f283499c243945b6ccbd0df3f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &767619306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,6 +2384,7 @@ GameObject:
   - component: {fileID: 822143434}
   - component: {fileID: 822143433}
   - component: {fileID: 822143432}
+  - component: {fileID: 822143435}
   m_Layer: 5
   m_Name: Dog
   m_TagString: Untagged
@@ -2252,7 +2456,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 822143433}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 822143435}
+        m_TargetAssemblyTypeName: FeatureButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &822143433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2291,6 +2507,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822143430}
   m_CullTransparentMesh: 1
+--- !u!114 &822143435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822143430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af5cf733852b014dbfc477c726dc063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 4 paws
+  feature: bark
 --- !u!1 &824499049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,6 +2533,7 @@ GameObject:
   - component: {fileID: 824499053}
   - component: {fileID: 824499052}
   - component: {fileID: 824499051}
+  - component: {fileID: 824499054}
   m_Layer: 5
   m_Name: Cow
   m_TagString: Untagged
@@ -2374,7 +2605,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 824499052}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824499054}
+        m_TargetAssemblyTypeName: FeatureButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &824499052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2413,6 +2656,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824499049}
   m_CullTransparentMesh: 1
+--- !u!114 &824499054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824499049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af5cf733852b014dbfc477c726dc063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 4 paws
+  feature: milk
 --- !u!1 &830431919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2425,6 +2682,7 @@ GameObject:
   - component: {fileID: 830431923}
   - component: {fileID: 830431922}
   - component: {fileID: 830431921}
+  - component: {fileID: 830431924}
   m_Layer: 5
   m_Name: Cuadrupeds
   m_TagString: Untagged
@@ -2498,7 +2756,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 830431922}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 830431924}
+        m_TargetAssemblyTypeName: PawsButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &830431922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2537,6 +2807,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830431919}
   m_CullTransparentMesh: 1
+--- !u!114 &830431924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830431919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d00f05efafe899449091daffd7fc870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 4 paws
 --- !u!1 &859304895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2670,6 +2953,7 @@ GameObject:
   - component: {fileID: 979612072}
   - component: {fileID: 979612071}
   - component: {fileID: 979612070}
+  - component: {fileID: 979612073}
   m_Layer: 5
   m_Name: Snakes
   m_TagString: Untagged
@@ -2741,7 +3025,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 979612071}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 979612073}
+        m_TargetAssemblyTypeName: FeatureButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &979612071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2780,6 +3076,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979612068}
   m_CullTransparentMesh: 1
+--- !u!114 &979612073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979612068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af5cf733852b014dbfc477c726dc063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 0 paws
+  feature: speed
 --- !u!1 &996304789
 GameObject:
   m_ObjectHideFlags: 0
@@ -3095,6 +3405,7 @@ GameObject:
   - component: {fileID: 1173838557}
   - component: {fileID: 1173838556}
   - component: {fileID: 1173838555}
+  - component: {fileID: 1173838558}
   m_Layer: 5
   m_Name: Snail
   m_TagString: Untagged
@@ -3166,7 +3477,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1173838556}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1173838558}
+        m_TargetAssemblyTypeName: FeatureButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1173838556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3205,6 +3528,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173838553}
   m_CullTransparentMesh: 1
+--- !u!114 &1173838558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173838553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af5cf733852b014dbfc477c726dc063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 0 paws
+  feature: slow
 --- !u!1 &1200303343
 GameObject:
   m_ObjectHideFlags: 0
@@ -3591,7 +3928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 125, y: -75}
+  m_AnchoredPosition: {x: 150, y: -75}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1743670608
@@ -3614,7 +3951,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3703,6 +4040,7 @@ GameObject:
   - component: {fileID: 1801384008}
   - component: {fileID: 1801384007}
   - component: {fileID: 1801384006}
+  - component: {fileID: 1801384009}
   m_Layer: 5
   m_Name: Bipeds
   m_TagString: Untagged
@@ -3776,7 +4114,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1801384007}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1801384009}
+        m_TargetAssemblyTypeName: PawsButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1801384007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3815,6 +4165,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801384004}
   m_CullTransparentMesh: 1
+--- !u!114 &1801384009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801384004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d00f05efafe899449091daffd7fc870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paws: 2 paws
 --- !u!1 &1817673301
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,8 +4206,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 311365971}
-  - {fileID: 127402959}
   - {fileID: 1981072712}
   m_Father: {fileID: 1517533012}
   m_RootOrder: 3
@@ -4136,6 +4497,7 @@ GameObject:
   - component: {fileID: 1981072715}
   - component: {fileID: 1981072714}
   - component: {fileID: 1981072713}
+  - component: {fileID: 1981072716}
   m_Layer: 5
   m_Name: Rocks
   m_TagString: Untagged
@@ -4156,8 +4518,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2039977325}
+  - {fileID: 311365971}
+  - {fileID: 127402959}
   m_Father: {fileID: 1817673302}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -4207,7 +4571,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1981072714}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1981072716}
+        m_TargetAssemblyTypeName: ClassButton, Assembly-CSharp
+        m_MethodName: PushButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1981072714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4246,6 +4622,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981072711}
   m_CullTransparentMesh: 1
+--- !u!114 &1981072716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981072711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79169f283499c243945b6ccbd0df3f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2039977324
 GameObject:
   m_ObjectHideFlags: 0
