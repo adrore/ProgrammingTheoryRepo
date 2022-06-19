@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// INHERITANCE
 public class PawsButton : ClassButton
 {
     public string paws;
@@ -12,6 +13,7 @@ public class PawsButton : ClassButton
         PawsToText();
     }
 
+    // POLYMORPHISM
     protected override void PawsToText()
     {
         pawsText.text = paws;

@@ -10,6 +10,7 @@ public class ClassButton : MonoBehaviour
     protected TextMeshProUGUI pawsText;
     protected TextMeshProUGUI featureText;
     private string nameButton;
+    // ENCAPSULATION
     protected string Name
     {
         get { return nameButton; }
@@ -29,6 +30,7 @@ public class ClassButton : MonoBehaviour
         nameText.text = Name;
     }
 
+    // POLYMORPHISM
     protected virtual void PawsToText()
     {
         pawsText.text = " ";
@@ -39,6 +41,7 @@ public class ClassButton : MonoBehaviour
         featureText.text = " ";
     }
 
+    // ABSTRACTION
     public virtual void PushButton()
     {
         NameToText();
